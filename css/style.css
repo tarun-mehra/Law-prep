@@ -1,0 +1,209 @@
+* {
+    font-family: "Sora", serif;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes tild {
+    0% {
+        left: -30px;
+    }
+    100% {
+        left: 900px;
+    }
+}
+
+
+:root {
+    --primaryColor: #101828;
+    --secondaryColor: #ed1b23;
+}
+
+header {
+    background-color: var(--primaryColor);
+    position: sticky;
+    top: 0px;
+    z-index: 9;
+}
+
+#menu ul li {
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.mobilemenu {
+    background-color: white;
+}
+
+.nav-item>button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--secondaryColor);
+}
+
+.form button {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.tild {
+    width: 25px;
+    height: 100%;
+    background-color: rgba(171, 171, 171, 0.3);
+    position: absolute;
+    top: 0px;
+    z-index: 99;
+    left: -50px;
+    transform: skew(-35deg);
+    animation: tild 3s linear infinite; 
+}
+
+.form {
+    background-color: var(--primaryColor);
+    border-radius: 5px;
+}
+
+.form input {
+    width: 100%;
+    padding: 13px 5px;
+}
+
+.form button {
+    width: 100%;
+    padding: 15px 0px;
+    background-color: var(--secondaryColor);
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.card a {
+    text-decoration: none;
+    color: #667085;
+}
+
+    .Seebtn {
+        color: red;
+        background-color: white;
+        padding: 5px 15px;
+        border-radius: 5px;
+        font-size: 14px;
+        border: 0.5px solid red;
+    }
+
+.border {
+    position: relative;
+    transition: 0.1s;
+}
+
+.border::after {
+    content: "";
+    width: 0%;
+    height: 3.5px;
+    background-color: var(--secondaryColor);
+    position: absolute;
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+.border:hover::after {
+    width: 100%;
+}
+
+.border:hover {
+    margin-top: -10px;
+}
+
+.border:hover .card-body a {
+    color: red;
+}
+
+.entrances {
+    background-color: var(--primaryColor);
+}
+
+.Seebtn:hover {
+    background-color: red;
+    color: white;
+}
+
+.answers {
+    background-color: lightgreen;
+    border-radius: 0 0 1rem 1rem;
+}
+
+footer {
+    background-color: #101828;
+}
+
+footer ul li,p {
+    font-size: 14.5px;
+}
+
+.system{
+    background-color: #101828;
+}
+.system h2{
+    padding-top: 100px;
+}
+
+.cardnew{
+    width: 100%;
+    height: 420px;
+    background: linear-gradient(106.78deg, #ffefab 10.51%, #f1c4c4 80.72%);
+}
+.card-body{
+    transition: 0.5s;
+}
+.card-body li{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+.card-body a{
+    text-decoration: none;
+    color: grey;
+}
+
+.cardnew:hover {
+    background: url("/images/card-bg.webp") no-repeat;
+    background-size: cover;
+}
+
+.main-overlay-box span {
+    transition: 0.5s;
+    font-size: 25px;
+}
+
+.cardnew:hover .main-overlay-box span {
+    font-size: 28px;
+    opacity: 0;
+}
+
+.card-body a:hover {
+    color: white;
+    background-color: #ed1b23;
+}
+
+.card-body li:hover {
+    color: white;
+    background-color: #ed1b23;
+}
+
+.card-body:hover{
+    margin-top: -15px;
+}
+
+.button li{
+    background-color: red;
+    color: white;
+}
+.card-link{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
